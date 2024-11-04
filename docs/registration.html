@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifanek Registration - Farmer Registration</title>
+    <style>
+        body {
+            background-image: url('rice-farm-background.jpg'); /* Use the same fresh rice farm background */
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .registration-container {
+            background-color: rgba(255, 255, 0, 0.7); /* Semi-transparent yellow */
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Farmer Registration</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="NIN Number" required>
+            <input type="text" placeholder="BVN Number" required>
+            <input type="text" placeholder="Phone Number" required>
+            <input type="text" placeholder="Farm Location" required>
+            <select required>
+                <option value="">Select Local Government</option>
+                <option value="Ado">Ado</option>
+                <option value="Ilejemeje">Ilejemeje</option>
+                <option value="Aiyekire (Gbonyin)">Aiyekire (Gbonyin)</option>
+                <option value="Efon">Efon</option>
+                <option value="Ekiti East">Ekiti East</option>
+                <option value="Ekiti South-West">Ekiti South-West</option>
+                <option value="Ekiti West">Ekiti West</option>
+                <option value="Ikere">Ikere</option>
+                <option value="Ido-Osi">Ido-Osi</option>
+                <option value="Ijero">Ijero</option>
+                <option value="Emure">Emure</option>
+                <option value="Ikole">Ikole</option>
+                <option value="Irepodun/Ifelodun">Irepodun/Ifelodun</option>
+                <option value="Ise/Orun">Ise/Orun</option>
+                <option value="Moba">Moba</option>
+                <option value="Oye">Oye</option> 
+                <!-- Add other LGAs as needed -->
+            </select>
+            <input type="text" value="Ekiti State" readonly>
+            <input type="number" placeholder="Farm Size (hectares)" required min="1">
+            <input type="file" accept="image/*" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
